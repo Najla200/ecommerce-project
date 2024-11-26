@@ -1,0 +1,38 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore log files and cache
+*.log
+*.cache
+cache/
+tmp/
+
+# Ignore environment files
+.env
+*.env
+
+# Ignore uploaded files (local development)
+uploads/
+
+# Ignore IDE configuration files
+.vscode/
+.idea/
+
+# Ignore compiled CSS/JS files (if using any preprocessing)
+*.min.css
+*.min.js
+
+# Ignore Composer dependencies (if added later)
+vendor/
+
+# Ignore Node modules (if using any front-end tools)
+node_modules/
+
+# Ignore database backups
+*.sql
+*.sqlite
+
+# Ignore temporary development files
+*.bak
+*.swp
