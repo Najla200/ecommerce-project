@@ -30,7 +30,7 @@ vendor/
 node_modules/
 
 # Ignore database backups
-*.sql
+# *.sql
 *.sqlite
 
 # Ignore temporary development files
