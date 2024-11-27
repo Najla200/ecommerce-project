@@ -128,3 +128,69 @@
   form .signup-link a:hover{
     text-decoration: underline;
   }
+
+  /* Responsive design */
+@media (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .wrapper .title {
+    font-size: 28px;
+    line-height: 80px;
+  }
+
+  .wrapper form {
+    padding: 10px 20px 30px 20px;
+  }
+
+  .wrapper form .field {
+    height: 45px;
+  }
+
+  .wrapper form .field input {
+    font-size: 16px;
+    padding-left: 15px;
+  }
+
+  .wrapper form .field label {
+    font-size: 15px;
+  }
+
+  form .field input[type="submit"] {
+    font-size: 18px;
+  }
+
+  form .signup-link {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    width: 95%;
+  }
+
+  .wrapper .title {
+    font-size: 24px;
+    line-height: 60px;
+  }
+
+  .wrapper form .field input {
+    font-size: 14px;
+    padding-left: 10px;
+  }
+
+  .wrapper form .field label {
+    font-size: 14px;
+  }
+
+  form .field input[type="submit"] {
+    font-size: 16px;
+  }
+
+  form .signup-link {
+    font-size: 12px;
+  }
+}
