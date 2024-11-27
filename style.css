@@ -130,6 +130,7 @@
   }
 
   /* Responsive design */
+  /* tablets and medium-sized devices. */
 @media (max-width: 768px) {
   .wrapper {
     width: 90%;
@@ -167,6 +168,7 @@
   }
 }
 
+/* mobile devices. */
 @media (max-width: 480px) {
   .wrapper {
     width: 95%;
