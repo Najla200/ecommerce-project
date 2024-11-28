@@ -111,6 +111,10 @@
     background: linear-gradient(-135deg, #c850c0, #4158d0);
     transition: all 0.3s ease;
   }
+  form .field input[type="submit"]:hover {
+    background: linear-gradient(-135deg, #4158d0, #c850c0); /* Hover effect */
+    transform: scale(1.02); /* Slight zoom effect */
+}
   form .field input[type="submit"]:active{
     transform: scale(0.95);
   }
@@ -180,7 +184,7 @@
   }
 
   .wrapper form .field input {
-    font-size: 14px;
+    font-size: 15px;
     padding-left: 10px;
   }
 
@@ -193,6 +197,6 @@
   }
 
   form .signup-link {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
