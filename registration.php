@@ -44,35 +44,3 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <div class="wrapper">
-        <div class="title">
-           Register
-        </div>
-        <form method="POST" action="register.php">
-            <div class="field">
-                <input type="text" name="email" required>
-                <label>Email Address</label>
-            </div>
-            <div class="field">
-                <input type="password" name="password" required>
-                <label>Password</label>
-            </div>
-            <div class="field">
-                <input type="submit" value="Register">
-            </div>
-            <div class="signup-link">
-                Already a member? <a href="login.php">Login now</a>
-            </div>
-        </form>
-    </div>
-</body>
-</html>
