@@ -14,9 +14,47 @@ html, body {
   font-family: 'Poppins', sans-serif;
 }
 
-::selection {
+/*::selection {
   background: #4158d0;
   color: #fff;
+}*/
+/* Existing CSS... */
+
+.logo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px; /* Add some padding around the header */
+ /* background-color: rgba(255, 255, 255, 0.8); /* Optional background for the header */
+ /*  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); Optional shadow for the header */
+ /* position: relative;  To ensure nav is positioned correctly */
+ /* z-index: 1;  To keep the header above other content */
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo {
+  width: 100px; /* Set a specific width for the logo */
+  height: 100px;
+  max-width: 100%;
+  border-radius: 50%;
+  overflow: hidden; /* Maintain aspect ratio */
+  margin-top: -10px;
+  margin-left: 20px;
+}
+
+.site-name {
+  font-size: 24px; /* Adjust the font size of the site name */
+  font-weight: bold; /* Make the site name bold */
+  color: #471203;
+  text-align: center;
+  margin-top: 5px; /* Change color to match your theme */
 }
 
 .wrapper {
@@ -65,9 +103,6 @@ html, body {
   background: rgba(255, 255, 255, 0.5);
   
 }
-
-
-
 .wrapper form .field input:focus,
 form .field input:valid {
   border-color: #4158d0;
