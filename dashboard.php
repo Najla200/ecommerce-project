@@ -18,16 +18,20 @@ $result = $conn->query($sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
 <header class="logo-header">
     <div class="logo-container">
-        <img src="./logo1.png" alt="Logo" class="logo">
+        <img src="./finalnew.png" alt="Logo" class="logo">
         <h1 class="site-name">VogueCart</h1>
     </div>
-    <a href="logout.php">Logout</a>
-    <a href="viewcart.php" class="cart-icon">Cart (<?php echo isset($_SESSION['cart_count']) ? $_SESSION['cart_count'] : 0; ?>)</a>
+    <a href="logout.php" class="logout-btn">Logout</a>
+    <a href="viewcart.php" class="cart-link">
+    <i class="fas fa-shopping-cart"></i>
+    <span id="cart-count"><?php echo isset($_SESSION['cart_count']) ? $_SESSION['cart_count'] : 0; ?></span>
+</a>
 </header>
 <div class="product-container">
     <?php while ($row = $result->fetch_assoc()) { ?>
