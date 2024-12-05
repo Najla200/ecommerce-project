@@ -8,34 +8,44 @@ body {
 
 /* Header Styles */
 .logo-header {
-    background-color: #333333;
-    color: white;
+    
+    /*background: rgba(139, 0, 0, 0.8); /* Semi-transparent red */
+    backdrop-filter: blur(10px);
+    color: #fff;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    gap: 20px;
 }
 
 .logo-container {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-grow: 1;
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
+    width: 100px; /* Set a specific width for the logo */
+    height: 100px;
+    max-width: 100%;
+    border-radius: 50%;
+    overflow: hidden; /* Maintain aspect ratio */
+    margin-top: -10px;
+    margin-left: 20px;
 }
 
-.site-name {
+/*.site-name {
     font-size: 1.8em;
     margin: 0;
-}
+}*/
 
 .header-links {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .header-links a {
@@ -44,8 +54,24 @@ body {
     font-size: 1.1em;
 }
 
-.header-links span {
+/*.header-links span {
     font-size: 1.2em;
+}*/
+
+/* Logout Button Styles */
+header a.logout-btn {
+    padding: 10px 20px;
+    background-color: #181a18; /* Change to a button-like color */
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+header a.logout-btn:hover {
+    background-color:rgb(230, 172, 14);  
+    transform: scale(1.05);
 }
 
 /* Product Container */
@@ -87,7 +113,8 @@ body {
 }
 
 .product button {
-    background-color: #4158d0;
+    background-color: #181a18;
+
     color: white;
     padding: 10px 20px;
     border: none;
@@ -96,24 +123,53 @@ body {
     font-size: 1em;
     transition: background-color 0.3s;
 }
+
 .product button:hover {
-    background-color: #c850c0;
+    background-color: rgb(230, 172, 14);
 }
 
 .product:hover {
+   /* background-color: rgb(230, 172, 14);*/
     transform: translateY(-5px);
 }
 
-/* Cart Icon */
-.cart-icon {
-    font-size: 1.2em;
-    background-color: #4158d0;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
+/* Cart Icon Styles */
+.cart-link {
+    display: flex;
+    align-items: center;
     text-decoration: none;
+    color:black;
+    font-size: 1.2em;
 }
 
-.cart-icon:hover {
-    background-color: #c850c0;
+.cart-link i {
+    margin-right: 8px;
+    font-size: 1.4em;
 }
+
+#cart-count {
+    /*background-color: white;*/
+    color: black;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 1rem;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+/* Cart Icon Hover Effect */
+.cart-link:hover {
+    color: rgb(230, 172, 14);
+}
+
+.cart-link i {
+    transition: transform 0.3s;
+}
+
+.cart-link:hover i {
+    transform: scale(1.1);
+}
+
+/*.cart-link:hover #cart-count {
+    background-color: #c850c0;
+}*/
