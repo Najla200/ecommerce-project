@@ -32,8 +32,7 @@ $result = $stmt->get_result();
 <body>
 <header class="logo-header">
     <div class="logo-container">
-        <img src="./finalnew.png" alt="Logo" class="logo">
-        <h1 class="site-name">VogueCart</h1>
+        <img src="./yellow.png" alt="Logo" class="logo">
     </div>
 </header>
 <div class="cart-container">

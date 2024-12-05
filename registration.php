@@ -2,6 +2,10 @@
 // Include the database connection file
 include('db.php');
 
+if (!$conn) {
+    die("Database connection failed: " . mysqli_connect_error());
+}
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Get user input from the form
     $email = $_POST['email'];

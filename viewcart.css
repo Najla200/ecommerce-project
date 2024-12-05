@@ -12,8 +12,10 @@ body {
 
 /* Header Styles */
 .logo-header {
-    background-color: #800020; /* Muted Teal */
-    color: white;
+    /*background: rgba(139, 0, 0, 0.8); /* Semi-transparent red */
+    background: #dcd2d2;
+    backdrop-filter: blur(10px);
+    color: #fff;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -23,6 +25,7 @@ body {
 header .logo-container {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .logo {
@@ -35,10 +38,10 @@ header .logo-container {
     margin-left: 20px;
 }
 
-header .site-name {
+/*header .site-name {
     font-size: 1.5rem;
     font-weight: bold;
-}
+}*/
 
 header a {
     color: #fff;
@@ -144,7 +147,7 @@ header a:hover {
 
 .cart-item a {
     text-decoration: none;
-    color: #ff5733;
+    color: #004d99;
     font-weight: bold;
     margin: 0 5px;
     display: inline-block;

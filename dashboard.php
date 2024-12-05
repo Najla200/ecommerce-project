@@ -24,8 +24,7 @@ $result = $conn->query($sql);
 <body>
 <header class="logo-header">
     <div class="logo-container">
-        <img src="./finalnew.png" alt="Logo" class="logo">
-        <h1 class="site-name">VogueCart</h1>
+        <img src="./yellow.png" alt="Logo" class="logo">
     </div>
     <a href="logout.php" class="logout-btn">Logout</a>
     <a href="viewcart.php" class="cart-link">

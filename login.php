@@ -2,8 +2,13 @@
 // Include the database connection file
 include('db.php');
 
+if (!$conn) {
+    die("Database connection failed: " . mysqli_connect_error());
+}
+
 // Start a session
 session_start();
+$error_message="";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Get the user's input from the login form
@@ -35,10 +40,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 header("Location: dashboard.php");
                 exit;
             } else {
-                echo "Incorrect password.";
+                $error_message = "Incorrect password.";
             }
         } else {
-            echo "No account found with that email.";
+            $error_message = "No account found with that email.";
         }
     }
 }

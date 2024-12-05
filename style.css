@@ -27,16 +27,22 @@ html, body {
   width: 100%;
   padding: 10px; /* Add some padding around the header */
   /*background-color: rgba(255, 255, 255, 0.8); /* Optional background for the header */
- /*  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); Optional shadow for the header */
- /* position: relative;  To ensure nav is positioned correctly */
- /* z-index: 1;  To keep the header above other content */
+   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);  
+  position: fixed;
+  top: 0;
+  left: 0;  
+  z-index: 1000;
+  /*background: rgba(173, 3, 3, 0.8); /* Semi-transparent red */
+  background: #dcd2d2;;
+    backdrop-filter: blur(10px);
+    color: #fff;
 }
 
 .logo-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 5px;
+  justify-content: flex-start;
+  gap: 10px;
 }
 
 .logo {
@@ -45,16 +51,17 @@ html, body {
   max-width: 100%;
   border-radius: 50%;
   overflow: hidden; /* Maintain aspect ratio */
-  margin-top: -10px;
-  margin-left: 20px;
+  margin:0;
 }
 
-.site-name {
+/*.site-name {
   font-size: 1.8em;
   margin: 0;
-}
+  font-weight: bold;
+}*/
 
 .wrapper {
+  margin-top: 150px;
   width: 380px;
   background: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
   border-radius: 15px;
