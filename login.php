@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // Validate that the inputs are not empty
     if (empty($email) || empty($password)) {
-        echo "Please enter both email and password.";
+        echo "<script>alert('Please enter both email and password.');</script>";
     } else {
         // Query to retrieve the user's details from the database
         $sql = "SELECT * FROM users WHERE email = ?";
@@ -40,11 +40,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 header("Location: dashboard.php");
                 exit;
             } else {
-                $error_message = "Incorrect password.";
+                 // Display alert and redirect to login page on incorrect password
+                 echo "<script>alert('Incorrect password.');
+                 window.location.href='login.html';</script>";
             }
         } else {
-            $error_message = "No account found with that email.";
+            // Display alert and redirect to login page on no account found
+            echo "<script>alert('No account found with that email.');
+            window.location.href='login.html';</script>";
         }
+       
     }
 }
 ?>
