@@ -62,6 +62,7 @@ $result = $stmt->get_result();
 </div>
 <div class="total-container">
     <a href="dashboard.php" class="back-dashboard-btn">Back to Dashboard</a>
+    
 </div>
 </body>
 </html>
