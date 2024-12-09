@@ -78,6 +78,7 @@ header a:hover {
     border: 1px dashed #ccc;
     background-color: #f9f9f9;
     border-radius: 8px;
+    font-weight: bold;
 }
 
 /* Cart Item */
@@ -106,7 +107,7 @@ header a:hover {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #004d99;
+    background-color:  #181a18;
     color: white;
     text-decoration: none;
     font-size: 1rem;
@@ -117,7 +118,7 @@ header a:hover {
 }
 
 .back-dashboard-btn:hover {
-    background-color: #003366;
+    /*background-color: rgb(230, 172, 14);*/
     transform: scale(1.05);
 }
 
@@ -137,17 +138,23 @@ header a:hover {
 
 .cart-item h2 {
     font-size: 1.2rem;
-    color: #004d99;
+    color:  #181a18;
     margin: 0;
 }
-
+.cart-item h3 {
+    font-size: 1rem;
+    color:  #181a18;
+    margin: 0;
+    font-weight: bold;
+}
 .cart-item p {
     margin: 5px 0;
+    font-weight: bold;
 }
 
 .cart-item a {
     text-decoration: none;
-    color: #004d99;
+    color:  #181a18;
     font-weight: bold;
     margin: 0 5px;
     display: inline-block;
@@ -159,8 +166,8 @@ header a:hover {
 }
 
 .cart-item a:hover {
-    background-color: #004d99;
-    color: #fff;
+    /*background-color: #004d99;*/
+    color:  rgb(230, 172, 14);
 }
 
 /* Button Links */
@@ -173,10 +180,10 @@ header a:hover {
     transition: 0.3s;
 }
 
-.cart-item a:hover {
+/*.cart-item a:hover {
     background-color: #004d99;
     color: #fff;
-}
+}*/
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {

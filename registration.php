@@ -39,9 +39,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $stmt->bind_param("ss", $email, $hashed_password);
 
             if ($stmt->execute()) {
-                echo "Account created successfully. <a href='login.php'>Login now</a>";
+                echo "<script>alert('Account created successfully.Please login.');
+                window.location.href='login.html';</script>";
             } else {
-                echo "Error: " . $stmt->error;
+                echo "<script>alert('Error creating account. Please try again.');
+                window.history.back();</script>";
             }
         }
     }
